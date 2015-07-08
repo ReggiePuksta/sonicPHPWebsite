@@ -1,0 +1,1 @@
+sudo grub-install /dev/sdX
