@@ -1,0 +1,7 @@
+uploads/*
+.tmp/
+tryouts/
+node_modules/
+Session.vim
+public/files/*
+public/fonts/*

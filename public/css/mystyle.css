@@ -1,0 +1,806 @@
+/*
+Created on : 03-Feb-2014, 19:48:00
+Author     : Reggie :)
+ */
+
+/*-- Main FORMAT*/
+
+* {
+    margin: auto;
+    padding: auto;
+}
+body {
+    background: url("../images/background.jpg")center top;
+}
+#wrapper {
+    background: url("../images/sonic_fusion_mockup3.jpg") no-repeat center top;
+    /* height: 1968px; */
+    z-index: -1;
+}
+
+/*------ General text formating ---------*/
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('../font/Jura-Book.ttf');
+}
+p {
+    color: white;
+}
+h1 {
+    margin-top: 20px;
+    color: #B4C954;
+    font-weight: bold;
+    background-color: transparent;
+    line-height: 25px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #d5d7d8;
+    color: #1F2348;
+}
+h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.6em;
+    /* background-color: #272e49; */
+    padding: 3px;
+}
+h4 {
+    margin: 0;
+    color: #285e8e;
+    /* color: whitesmoke; */
+    /* background-color: #272e49; */
+    padding: 3px;
+}
+h5 {
+
+}
+a {
+    color: #1D213A;
+}
+a:hover {
+    color: #458CA3;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    color: white;
+    opacity: 50%;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+li a {
+    color: whitesmoke;
+}
+td {
+    padding: 5px;
+}
+hr {
+    opacity: 12;
+    border-color: grey;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+}
+
+/*--- Header ---*/
+header {
+    padding: 10px;
+    background: url("../images/header2.png") no-repeat center top;
+    height: 114px;
+    text-align: center;
+}
+#main {
+    /* border-left: solid 4px white; */
+    /* border-right: solid 4px white; */
+    display: block;
+    position: relative;
+    width: 900px;
+}
+/*---------- Navigation CSS ---------*/
+nav {
+    width: 100%;
+}
+#mainmenu {
+    padding: 0 auto;
+    margin: 0 auto;
+    width: 100%;
+}
+.joa {
+    /* bootstrap class together with joa class to add colour to the column and not affect others .col-sm-2 that might repeat*/
+    padding: 1.2em;
+    border-radius: 10px;
+    background-color: #222842;
+    border: 1px solid whitesmoke;
+    z-index: 50;
+}
+.joa:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 501ms ease;
+    transition: all 500ms ease;
+    background-color: #B4C954;
+}
+/* -------Clicked button-*/
+.joa.highlight {
+    background-color: #B4C954;
+    cursor: default;
+}
+.joa.highlight a:hover,
+.joa.highlight a {
+    color: black;
+    cursor: default;
+}
+nav ul li a {
+    position: absolute;
+    /*making div tag clickable*/
+    padding: 0.3em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #B4C954;
+    font-size: 1.2em;
+}
+nav ul li a:hover {
+    color: black;
+}
+
+/* Home page parts formatting */
+/*---- Divided into part1, part2 and part3*/
+#part1 {
+    margin: 0 auto;
+    position: relative;
+    width: 98%;
+    height: 290px;
+    background: url("../images/part1.jpg");
+    border: 2px solid white;
+    padding: 20px;
+}
+#part1_text1 {
+    position: absolute;
+    top: 15px;
+    /* top: 60px; */
+    /* left: 50px; */
+}
+#part1_text2 {
+    position: absolute;
+    top: 180px;
+    /* top: 120px; */
+    /* left: 50px; */
+}
+
+#part2 {
+    margin: 0 auto;
+    width: 98%;
+    height: 300px;
+    background: url("../images/part2.jpg");
+    border: 2px solid white;
+    margin-top: 10px;
+    padding: 20px;
+}
+#part3 {
+    width: 98%;
+    height: 345px;
+    background: url("../images/part3.jpg");
+    border: 2px solid white;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/*-------Personal User Menu-----*/
+table {
+    color: white;
+    border-color: white;
+    margin: 5px;
+}
+#avatar {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.personal_menu {
+    font-size: 1.2em;
+}
+.img_border {
+    border: 3px solid whitesmoke;
+    border-radius: 10px
+}
+/* Text formats */
+
+#logname {
+    color: #B4C954;
+}
+
+/*-Home page content divided into 3 Parts-*/
+/*--------Navigation shadow-*/
+
+#shadow {
+    position: absolute;
+    height: 50px;
+    width: 98%;
+    left: 1%;
+    background: url("../images/shadow.png") repeat-x;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/*------Picture formating-*/
+.pic_large {
+    width: 270px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    float: right
+}
+.pic_medium {
+    width: 130px;
+    height: 80px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/*--------Registration and Login form--------------*/
+
+fieldset {
+    width: 100%;
+    float: right;
+    margin: 0 auto;
+    /* display: inline-block; */
+    /* width: 50%; */
+    /* border: 1px solid #dcdcdc; */
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+    background-color: rgba(213, 215, 216, 0.2);
+    /* padding: 5px 0 0 0; */
+    padding: 10px 0 0 10px;
+    /* margin: 5px 0; */
+}
+/*---------Login Form---*/
+#main fieldset {
+    /* margin: 0; */
+    /* float: right; */
+    /* padding: 1px 10px; */
+    text-align: left;
+}
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 1px 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+input {
+    font-size: 120%;
+    padding: 5px;
+    margin-bottom: 8px;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    /* background-color: #d5d7d8; */
+    border: 1px solid #5a5854;
+    border-radius: 5px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
+}
+input:focus {
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
+}
+.nav-tabs {
+    border: none;
+}
+textarea {
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 3px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
+    display: block;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+textarea:focus {
+    background-color: #ffffff;
+    border: 3px solid #b1e1e4;
+}
+/* ----------------Home Other Projects */
+
+#footer_img_row1 {
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align:center;
+}
+#footer_img_row1 h2,
+#footer_partners_logos h2{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#footer_partners_logos {
+    /* width: 900px; */
+    /* display: table-cell; */
+    vertical-align: middle;
+}
+
+/*---Projects pictures list as thumbnails*/
+.thumbnail-list {
+    /* thumbnail picturess */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.thumbnail-list li {
+    display: inline-block;
+}
+.thumbnail-list a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Home Projects Hover effect */
+.thumbnail-list a:hover .cover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+    background-color: rgba(213, 215, 216, 0.8);
+    color: rgba(31, 35, 72, 1);
+    transition: all .4s linear;
+    padding: 40px 5px 5px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.thumbnail-list a:hover h3 {
+    color: #1F2348;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.thumbnail-list p {
+    color: #1F2348;
+    font-size: .9em;
+    vertical-align: middle;
+}
+.thumbnail-list .pic_large {
+    display: block;
+    position: relative;
+}
+
+/* ---------------------Footer -----------------*/
+footer {
+    width: 1000px;
+}
+#footer_sitemap {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: black;
+    width: 90%;
+}
+footer p {
+    padding: 10px;
+    width: 90%;
+    color: grey;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*--------------Locations page --*/
+.setwidth
+/* fix widht problem */
+{
+    margin: 0;
+}
+.fluid-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+.fluid-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ------------------Pictures added-----*/
+.pic_larg {
+    margin: 10px;
+    width: 270px;
+    height: 180px;
+}
+.pic_profile {
+    float: left;
+    margin-right: 10px;
+    width: 140px;
+    border-radius: 10px;
+}
+.pic_large img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.cover {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* For IE8 and earlier */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(213, 215, 216, 0);
+    text-align: center;
+}
+
+/*----- Testing Schedule Eventlist -----*/
+.collumn {
+    color: whitesmoke;
+    padding: 5px;
+    margin: 0.2%;
+    vertical-align: top;
+    position: absolute;
+    height: 100px;
+    background-color: #222842;
+    font-size: 15px;
+    Box-sizing: Border-box;
+    overflow: hidden;
+}
+.collumn:hover {
+    color: black;
+    background-color: #B4C954;
+}
+.collumn:active {
+    background-color: green;
+}
+#myTab li {
+    width: 20%;
+}
+#myTab li a {
+    border: 1px solid whitesmoke;
+}
+#tabMiddle li {
+    width: 50%;
+    margin: 0;
+}
+#tabMiddle li a {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0;
+    border: none;
+}
+#tabMiddle > li > a:hover {
+    background-color: rgba(213, 215, 216, 0.3);
+}
+#tabMiddle > li.active > a {
+    margin: 0;
+    /* padding: 12px; */
+    line-height: 1em;
+    color: white;
+    /* border: none; */
+    /* border: 1px solid white; */
+    background-color: rgba(213, 215, 216, 0.2);
+}
+.rows {
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    background-color: #458CA3;
+    position: relative;
+    width: 95%;
+    height: 105px;
+}
+
+/*---Eventlist Ruller----------*/
+.ruler,
+.ruler li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+/* IE6-7 Fix */
+
+.ruler,
+.ruler li {
+    *display: inline;
+}
+.ruler {
+    width: 100%;
+    background: lightYellow;
+    box-shadow: 0 -1px 1em hsl(60, 60%, 84%) inset;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: black;
+    height: 30px;
+    white-space: nowrap;
+}
+.ruler li {
+    width: 7.3%;
+    display: inline-block;
+    position: relative;
+    text-shadow: 1px 1px hsl(60, 60%, 84%);
+}
+.ruler li:before {
+    content: '';
+    position: absolute;
+    border-left: 2px solid #ccc;
+    height: 10px;
+    left: 15px;
+    top: -10px;
+}
+
+/*---------- Registration Page ----------*/
+#hide {
+    cursor: pointer;
+}
+#valid_paragraph {
+    font-size: 0.9em;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 auto;
+    width: 45%;
+    border-radius: 10px;
+    background-color: #458CA3;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+}
+#valid_paragraph ul {
+    font-size: 0.95em;
+    vertical-align: top;
+    display: inline;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#valid_paragraph li {
+    width: 90%;
+    vertical-align: top;
+    height: 100px;
+    margin: 2.5%;
+    padding: 10px;
+    background-color: #222842;
+}
+#valid_paragraph p {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    background-color: #222842;
+}
+#valid_paragraph a {
+    clear: both;
+    display: block;
+    border: 1px solid whitesmoke;
+    color: burlywood;
+    padding: 10px;
+    background-color: #222842;
+}
+#valid_paragraph a:hover {
+    color: lightblue;
+}
+
+/*------News layout ----*/
+#news {
+    width: 98%;
+}
+.news_left {
+    background-color: #285e8e;
+    width: 70%;
+    display: inline-block;
+    border: solid 2px white;
+    margin-right: 10px;
+    margin-top: 0;
+    vertical-align: top;
+    padding: 5px;
+}
+.news_left table {
+    width: 90%;
+}
+#news_mini {
+    padding: 5px;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    border: solid 2px white;
+    background-color: #385887;
+    text-align: center;
+}
+#news_mini p {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#newsid1,
+#newsid1 table {
+    background-color: #052348;
+    color: white;
+    padding: 5px;
+}
+#newsid2 {
+    padding: 5px;
+    background-color: #222842;
+}
+/*-------------------sidebar CSS*/
+
+#news_mini label,
+#news_mini input {
+    width: 95%;
+    display: inline-block;
+    margin: 5px;
+}
+#search {
+    width: 95%;
+    margin: 5%;
+}
+
+/*------ Schedule page css */
+.border1 {
+    border-left: 10px solid #111111;
+    border-color: white;
+    padding: 0.25em;
+}
+.border2 {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 300px;
+}
+.border2:hover {
+    background-color: #385887;
+}
+
+/* ------Other small pages---*/
+#news_mini_2version {
+    height: 900px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+    vertical-align: middle;
+    border: solid 2px white;
+    background-color: #385887;
+}
+#news_mini_2version fieldset {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+#fileup {
+    margin: 0 auto;
+    width: 95%;
+}
+/*-----Dynamic Event page  CSS------*/
+.img_border {
+    height: 300px;
+    width: 500px;
+    border: 3px solid whitesmoke;
+}
+.event_img {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 20px;
+    float: right;
+}
+.news_left2 {
+    margin: 0 auto;
+    background-color: #285e8e;
+    width: 70%;
+    border: solid 2px white;
+    vertical-align: top;
+    padding: 20px;
+}
+/*------ ICON SPRITES-------*/
+
+.sprite {
+    margin: 3px 5px 5px 0px;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background: url(../images/sprite.png)0 0;
+}
+#sprite1:hover {
+    background-position: 0 -64px;
+}
+#sprite1 {
+    background-position: 0 -96px;
+}
+#sprite2:hover {
+    background-position: 0 0;
+}
+#sprite2 {
+    background-position: 0 -32px;
+}
+#sprite3:hover {
+    background-position: 0 -192px;
+}
+#sprite3 {
+    background-position: 0 -224px;
+}
+#sprite4 {
+    background-position: 0 -288px;
+}
+#sprite4:hover {
+    background-position: 0 -256px;
+}
+#sprite5 {
+    background-position: 0 -352px;
+}
+#sprite5:hover {
+    background-position: 0 -320px;
+}
+/*----Different styles of underline-*/
+/*Underline gradient from white to grey */
+.underline {
+    margin-top:5px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 1px;
+    background: -webkit-linear-gradient(left, whitesmoke, grey);
+}
+/*Underline gradient from white to black */
+.underline2 {
+    background-color: whitesmoke;
+    width: 98%;
+    margin: 5px auto 5px auto;
+    height: 1px;
+    background: -webkit-linear-gradient(left, whitesmoke, black);
+}
+/*Underline gradient from white to blue */
+
+.underline3 {
+    clear: both;
+    background-color: whitesmoke;
+    width: 98%;
+    margin: 5px auto 10px auto;
+    height: 1px;
+    background: -webkit-linear-gradient(left, whitesmoke, #285E8E);
+}
+/*-----------------------Responsive Design*/
+
+@media screen and (max-width: 1199px) {
+    #main {
+        width: 90%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+/* --------->Responsive design-----*/
+
+@media screen and (max-width: 767px) {
+    .news_left {
+        width: 100%;
+    }
+    #news_mini {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1199px) {
+    #main {
+        width: 85%;
+    }
+    footer {
+        width: 100%;
+    }
+    hr {
+        width: 90%;
+    }
+}
