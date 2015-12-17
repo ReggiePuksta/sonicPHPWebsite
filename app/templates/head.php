@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
         <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+        <!-- 
         <link href='http://fonts.googleapis.com/css?family=Artifika' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
         <link href="<?php echo URL; ?>css/mystyle.css" rel="stylesheet" media="screen">
 <!-- <meta name="Description" content = "Sonic fusion festival">
         <meta name="Keywords" content ="Sonic, Fusion, Festival"> -->

@@ -6,7 +6,7 @@
                 experiences and includes sound installations, audio-visual and
                 interactive live works and live performances. The works aim to
                 explore digital technologies and broadening access to world-class
-                experimets.
+                experimets. Find out more in our <a href="news">About </a>page.
             </p>
         </div>
         <div class="hidden-xs col-sm-6">
@@ -18,15 +18,18 @@
     <!-- part3 = header-->
     <div class="row">
         <div class="hidden-xs col-sm-6">
-            <h2>Top Events</h2>
+            <h2>Preview events</h2>
+            <!-- Change to unordered list -->
+            <!-- Top 5 events -->
             <ol>
-                <li><a href="event/1">Listening Cities 1</a>
+                <li><a href="event/1">Listining Cities</a>
                 </li>
-                <li><a href="event/7">Listening Cities 3</a>
+                <li><a href="event/7">Janoffer</a>
                 </li>
                 <li><a href="event/5">Carter Tuti</a>
                 </li>
             </ol>
+                <p>Check <a href="schedule">all events</a></p>
         </div>
         <div class="col-sm-6">
             <div id="carousel-example-generic" class=" carousel slide" data-ride="carousel">

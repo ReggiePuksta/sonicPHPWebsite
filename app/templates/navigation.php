@@ -3,10 +3,9 @@
     <h1>Sonic Fusion Festival 2014</h1>
     <h3 class="hidden-xs">Contemporary music from across the globe</h3>
 </header>
-<nav class="navbar navbar-default">
+<!-- <nav class="navbar navbar-default"> -->
     <!-- Brand and toggle get grouped for better mobile display -->
-<div id="container">
-    <div class="navbar-header">
+    <!-- <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -14,9 +13,9 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand visible-xs" href="#">Menu</a>
-    </div>
+    </div> -->
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul id="mainmenu" class="row list-unstyled navbar-nav">
             <li class="col-sm-2 joa">
                 <a href="<?php echo URL; ?>home">Home</a>
@@ -38,8 +37,7 @@
                 <a href="<?php echo URL; ?>contacts">Contacts</a>
             </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-</div>
+    </div>--><!-- /.navbar-collapse -->
 </nav>
 <div id="main">
     <!-- Navigation -->

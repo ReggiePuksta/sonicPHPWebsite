@@ -5,15 +5,6 @@ Author     : Reggie :)
 
 /*-- Main FORMAT*/
 
-header,
-section,
-footer,
-aside,
-nav,
-article,
-figure {
-    display: block;
-}
 * {
     margin: auto;
     padding: auto;
@@ -26,30 +17,6 @@ body {
     /* height: 1968px; */
     z-index: -1;
 }
-/*--- Header ---*/
-header {
-    /* width: 90%; */
-    padding: 10px;
-    background: url("../images/header2.png") no-repeat center top;
-    height: 114px;
-    text-align: center;
-}
-h1 {
-    margin-top: 20px;
-    color: #B4C954;
-    font-weight: bold;
-    background-color: transparent;
-}
-header h3 {
-    margin-top: -5px;
-}
-#main {
-    /* border-left: solid 4px white; */
-    /* border-right: solid 4px white; */
-    display: block;
-    position: relative;
-    width: 900px;
-}
 
 /*------ General text formating ---------*/
 @font-face {
@@ -59,10 +26,18 @@ header h3 {
 p {
     color: white;
 }
+h1 {
+    margin-top: 20px;
+    color: #B4C954;
+    font-weight: bold;
+    background-color: transparent;
+    line-height: 25px;
+}
 h2 {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     margin-bottom: 5px;
+    padding: 5px;
     background-color: #d5d7d8;
     color: #1F2348;
 }
@@ -79,6 +54,9 @@ h4 {
     /* color: whitesmoke; */
     /* background-color: #272e49; */
     padding: 3px;
+}
+h5 {
+
 }
 a {
     color: #1D213A;
@@ -108,6 +86,20 @@ hr {
     margin: 0px auto 0px auto;
 }
 
+/*--- Header ---*/
+header {
+    padding: 10px;
+    background: url("../images/header2.png") no-repeat center top;
+    height: 114px;
+    text-align: center;
+}
+#main {
+    /* border-left: solid 4px white; */
+    /* border-right: solid 4px white; */
+    display: block;
+    position: relative;
+    width: 900px;
+}
 /*---------- Navigation CSS ---------*/
 nav {
     width: 100%;
@@ -172,16 +164,16 @@ nav ul li a:hover {
 #part1_text1 {
     position: absolute;
     top: 15px;
-    background-color: #d5d7d8;
-    color: #1F2348;
+    /* top: 60px; */
+    /* left: 50px; */
 }
 #part1_text2 {
-    font-weight: normal;
     position: absolute;
     top: 180px;
-    background-color: #d5d7d8;
-    color: #1F2348;
+    /* top: 120px; */
+    /* left: 50px; */
 }
+
 #part2 {
     margin: 0 auto;
     width: 98%;
@@ -259,49 +251,25 @@ table {
 /*--------Registration and Login form--------------*/
 
 fieldset {
-    display: inline-block;
-    width: 50%;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-    background-color: #458CA3;
-    margin: 5px;
-}
-/* legend { */
-/*     background-color: #285E8E; */
-/*     border: 1px solid #dcdcdc; */
-/*     border-radius: 10px; */
-/*     padding: 5px 20px; */
-/*     margin-bottom: 0px; */
-/*     text-align: center; */
-/*     text-transform: uppercase; */
-/*     color: white; */
-/* } */
-/* input { */
-/*     font-size: 120%; */
-/*     color: #5a5854; */
-/*     background-color: #f2f2f2; */
-/*     border: 2px solid #bdbdbd; */
-/*     border-radius: 5px; */
-/*     padding: 3px; */
-/*     display: block; */
-/*     margin-bottom: 5px; */
-/* } */
-/* input:focus { */
-/*     background-color: #ffffff; */
-/*     border: 2px solid #458CA3; */
-/* } */
-/*---------Login Form---*/
-
-#main fieldset {
+    width: 100%;
     float: right;
-    width: 280px;
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 1px 10px;
+    margin: 0 auto;
+    /* display: inline-block; */
+    /* width: 50%; */
+    /* border: 1px solid #dcdcdc; */
+    border-radius: 0px 0px 10px 10px;
     text-align: left;
-    background-color: #326982;
+    background-color: rgba(213, 215, 216, 0.2);
+    /* padding: 5px 0 0 0; */
+    padding: 10px 0 0 10px;
+    /* margin: 5px 0; */
+}
+/*---------Login Form---*/
+#main fieldset {
+    /* margin: 0; */
+    /* float: right; */
+    /* padding: 1px 10px; */
+    text-align: left;
 }
 legend {
     background-color: #efefef;
@@ -313,17 +281,25 @@ legend {
 }
 input {
     font-size: 120%;
+    padding: 5px;
+    margin-bottom: 8px;
     color: #5a5854;
     background-color: #f2f2f2;
-    border: 3px solid #bdbdbd;
+    /* background-color: #d5d7d8; */
+    border: 1px solid #5a5854;
     border-radius: 5px;
-    padding: 2px 2px 2px 2px;
-    display: block;
-    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
 }
 input:focus {
     background-color: #ffffff;
-    border: 3px solid #b1e1e4;
+    border: 1px solid #b1e1e4;
+}
+.nav-tabs {
+    border: none;
 }
 textarea {
     color: #5a5854;
@@ -501,6 +477,28 @@ footer p {
 }
 #myTab li a {
     border: 1px solid whitesmoke;
+}
+#tabMiddle li {
+    width: 50%;
+    margin: 0;
+}
+#tabMiddle li a {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0;
+    border: none;
+}
+#tabMiddle > li > a:hover {
+    background-color: rgba(213, 215, 216, 0.3);
+}
+#tabMiddle > li.active > a {
+    margin: 0;
+    /* padding: 12px; */
+    line-height: 1em;
+    color: white;
+    /* border: none; */
+    /* border: 1px solid white; */
+    background-color: rgba(213, 215, 216, 0.2);
 }
 .rows {
     margin: 5px auto 5px auto;
@@ -751,8 +749,9 @@ footer p {
 /*----Different styles of underline-*/
 /*Underline gradient from white to grey */
 .underline {
+    margin-top:5px;
     background-color: whitesmoke;
-    width: 90%;
+    width: 100%;
     height: 1px;
     background: -webkit-linear-gradient(left, whitesmoke, grey);
 }

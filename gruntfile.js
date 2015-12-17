@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             },
             options: {
                 port: 4000,
-                "proxy": "127.0.0.1:80/sonic_fusion",
+                "proxy": "127.0.0.1:80/tryouts/",
                 ghostMode: {
                             clicks: true,
                             location: true,

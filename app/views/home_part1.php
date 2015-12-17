@@ -1,10 +1,10 @@
 <!-- part1 = header-->
 <div id="part1" class="row">
-    <div class="col-sm-6">
+    <div class="hidden-xs col-sm-6">
         <h2 id="part1_text1">21st - 24th of March</h2>
         <h2 id="part1_text2">University of Salford</h2>
     </div>
-    <div class="hidden-xs col-sm-6">
+    <div class="col-sm-6">
         <?php if (isset($_SESSION[ 'valid_user'])): ?>
         <h3> You are logged in as: <span id="logname"> <?php echo $_SESSION['valid_user']; ?></span></h3>
         <div class="underline"></div>
@@ -31,7 +31,7 @@
                 <td>Time</td>
             </tr>
             <?php foreach($eventsData as $row): ?>
-            <?php $_SESSION['orderss']=$row->orderid; ?>
+            <?php $_SESSION[ 'orderss']=$row->orderid; ?>
             <tr>
                 <td>
                     <?php echo $row->title; ?></td>
@@ -46,49 +46,47 @@
         <p>---------None---------</p>
         <?php endif; ?>
         <?php else: ?>
-        <fieldset>
-            <Legend>Log In</legend>
-            <form name="form2" method="post" action="index.php">
-                <table>
-                    <tr>
-                        <td>Nickname:</td>
-                        <td>
-                            <input type="text" name="form_nickname" size="15" maxlength="20" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td>
-                            <input type="password" name="form_password" size="15"
-                            maxlength="20" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">
-                            <input type="submit" name="submit" value="Log in" />
-                        </td>
-                        <?php if(isset($_POST['form_nickname'])): ?>
-                        <td>
-                            <p>Could not log you in. Or you need to <a href="register.php"> Register</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <a href="passforget">Forgot your password?</a>
-            <br>
-            <a href="passforget">Forgot your username? </a>
-            <?php else: ?>
-            <td>You are not logged in.</td>
-            </tr>
-            <tr>
-                <td><a href="registration">Need to register?</a>
-                    <td>
-            </tr>
-            </table>
-            </form>
-            <?php endif;?>
-        </fieldset>
+        <!-- <h3 class="text-center"><a href="login">Login</a> or <a href="login">Register</a> to get tickets</h3> -->
+        <!-- <a href="register"><h2>Register</h2></a> -->
+        <ul id="tabMiddle" class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#login">Login</a>
+            </li>
+            <li><a data-toggle="tab" href="#register">Register</a>
+            </li>
+        </ul>
+        <!-- <div class="underline"></div> -->
+        <div class="tab-content">
+            <div id="login" class="tab-pane fade in active">
+                <fieldset>
+                    <form name="form2" method="post" action="index.php">
+                        <input type="text" name="form_nickname" maxlength="20" placeholder="Username"/>
+                        <input type="password" name="form_password" maxlength="20" placeholder="Password"/>
+                        <input type="submit" name="submit" value="Log in" />
+                        <?php if(isset($_POST[ 'form_nickname'])): ?>
+                        <p>Could not log you in. Or you need to <a href="register.php"> Register</a>
+                        </p>
+                    </form>
+                    <a href="passforget">Forgot your password?</a>
+                    <br>
+                    <a href="passforget">Forgot your username? </a>
+                    <?php else: ?>
+                    </form>
+                    <?php endif;?>
+                </fieldset>
+            </div>
+            <div id="register" class="tab-pane fade">
+                <fieldset>
+                    <form name="registration" action="register.php" method="post">
+                        <input type="text" name="form_nickname" placeholder="Username"/>
+                        <input type="password" name="password" placeholder="Password"/>
+                        <input type="password" name="password_confirm" placeholder="Confirm Password"/>
+                        <input type="email" name="email" placeholder="Email address"/>
+                        <input type="submit" name="submit" value="Register" />
+
+                    </form>
+                </fieldset>
+            </div>
+        </div>
         <?php endif;?>
     </div>
 </div>
